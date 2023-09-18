@@ -1,0 +1,267 @@
+*,
+a,
+p {
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration: none;
+  margin: 0px;
+}
+
+a {
+  color: inherit;
+}
+
+h1 {
+  line-height: 1.5;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+body {
+  background-color: #674baf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.huddle-container {
+  background-image: url('./images/bg-mobile.svg');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-left: 30px;
+  padding-right: 30px;
+  max-width: 1800px;
+}
+
+.huddle-container .huddle-container-top {
+  padding-top: 20px;
+  width: 100%;
+}
+.huddle-container .huddle-container-top img {
+  height: 70px;
+  width: 180px;
+}
+
+.huddle-container-middle {
+  display: flex;
+  flex-direction: column;
+}
+.huddle-container-middle .huddle-hero-image,
+.huddle-container-middle .huddle-hero-description {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.huddle-container-middle .huddle-hero-image {
+  margin-top: 30px;
+}
+.huddle-container-middle .huddle-hero-image img {
+  /* height: 210px; */
+  min-width: 350px;
+  width: 100%;
+}
+
+.huddle-container-middle .huddle-hero-description {
+  margin-top: 20px;
+}
+
+.huddle-container-middle .huddle-hero-description {
+  margin-top: 20px;
+}
+.huddle-container-middle .main-heading h1,
+.huddle-container-middle .para-desc p {
+  text-align: center;
+}
+.huddle-container-middle .para-desc p {
+  margin-top: 15px;
+  font-size: 19px;
+  line-height: 2;
+}
+
+.huddle-container-middle .register-btn {
+  background-color: #ffffff;
+  border-color: transparent;
+  border-radius: 20px;
+  width: 200px;
+  margin-top: 40px;
+  height: 40px;
+}
+.huddle-container-middle .register-btn p {
+  font-size: 17px;
+  color: #674baf;
+}
+.huddle-container-bottom {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.huddle-container-bottom .socials {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.huddle-container-bottom .socials .facebook,
+.huddle-container-bottom .socials .twitter,
+.huddle-container .instagram {
+}
+.huddle-container-bottom .socials .facebook a,
+.huddle-container-bottom .socials .twitter a,
+.huddle-container-bottom .socials .instagram a {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  border-color: #e48686 important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  transition: all 0.3s linear;
+}
+
+.huddle-container-bottom .socials .facebook i,
+.huddle-container-bottom .socials .twitter i,
+.huddle-container-bottom .socials .instagram i {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
+}
+
+.facebook a:hover,
+.twitter a:hover,
+.instagram a:hover {
+  color: hsl(300, 69%, 71%);
+  font-size: 30px;
+  /* border: 2px solid #740606 !important; */
+  border-color: hsl(300, 69%, 71%) !important;
+}
+
+@media screen and (max-width: 409px) {
+  .huddle-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* tablet potrait */
+@media screen and (min-width: 733px) and (max-width: 1135px) {
+  h1 {
+    line-height: 60px;
+    font-size: 45px;
+  }
+  .huddle-container {
+    background-image: url('./images/bg-desktop.svg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .huddle-container .huddle-container-top {
+    margin-bottom: 40px;
+  }
+  .huddle-container-middle .huddle-hero-image img {
+    width: 100%;
+  }
+  .huddle-container-middle .huddle-hero-description {
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1135px) {
+  h1 {
+    line-height: 60px;
+    font-size: 40px;
+  }
+  .huddle-container {
+    background-image: url('./images/bg-desktop.svg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left: 60px;
+    padding-right: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .huddle-container .huddle-container-top {
+    margin-bottom: 40px;
+  }
+
+  .huddle-container-middle {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 40px;
+  }
+
+  .huddle-container-middle .huddle-hero-image {
+    margin: 0;
+  }
+
+  .huddle-container-middle .huddle-hero-image img {
+    height: auto;
+    width: 100%;
+    min-width: 600px;
+  }
+  .huddle-container-middle .huddle-hero-description {
+    display: flex;
+    align-items: start;
+    margin: 0;
+    margin-top: 30px;
+    flex-wrap: wrap;
+  }
+  .huddle-container-middle .main-heading h1,
+  .huddle-container-middle .para-desc p {
+    text-align: left;
+  }
+  .huddle-container-middle .para-desc p {
+    font-size: 19px;
+    line-height: 1.5;
+  }
+  .huddle-container-middle .register-btn {
+    height: 60px;
+    border-radius: 30px;
+  }
+  .huddle-container-bottom {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .huddle-container-bottom .socials {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .huddle-container-middle .huddle-hero-image img {
+    height: 493px;
+    width: 696px;
+  }
+  .huddle-container-middle {
+    gap: 100px;
+  }
+  .huddle-container-middle .para-desc p {
+    font-size: 25px;
+  }
+}
+
+.author {
+  text-align: center;
+}
